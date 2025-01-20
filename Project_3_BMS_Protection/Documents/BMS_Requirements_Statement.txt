@@ -1,0 +1,38 @@
+
+Battery Management System (BMS) Functional Requirements
+
+1. **Current Protection**:
+   - The BMS shall disable all FETs when the charging current exceeds 3A to prevent overcurrent conditions.
+   - The BMS shall disable all FETs when the discharging current falls below -5A to prevent over-discharge conditions.
+   - The BMS shall maintain normal operation when the charging current is within the range of 0.5A to 3A.
+   - The BMS shall maintain normal operation when the discharging current is within the range of -5A to -0.5A.
+   - The BMS shall enable all FETs during low current conditions between -0.5A and 0.5A.
+   - The BMS shall activate the overcurrent LED when fault conditions are detected and deactivate it upon recovery.
+
+2. **Temperature Protection**:
+   - The BMS shall disable all FETs when the temperature exceeds 40°C to prevent overheating.
+   - The BMS shall disable all FETs when the temperature falls below 15°C to prevent damage from low temperatures.
+   - The BMS shall maintain normal operation when the temperature is within the safe range of 20°C to 40°C.
+   - The BMS shall activate the overtemperature LED when the temperature exceeds 40°C and deactivate it upon recovery.
+   - The BMS shall activate the undertemperature LED when the temperature falls below 15°C and deactivate it upon recovery.
+
+3. **Voltage Protection**:
+   - The BMS shall disable the charge FETs when the voltage exceeds 4.15V to prevent overcharging.
+   - The BMS shall disable the discharge FETs when the voltage falls below 2.8V to prevent deep discharge.
+   - The BMS shall maintain normal operation when the voltage is within the range of 3.0V to 4.15V.
+   - The BMS shall activate the overvoltage LED when the voltage exceeds 4.15V and deactivate it upon recovery.
+   - The BMS shall activate the undervoltage LED when the voltage falls below 2.8V and deactivate it upon recovery.
+
+4. **General Recovery Logic**:
+   - The BMS shall re-enable FETs after a fault condition only if the monitored parameter returns to its safe range and remains stable for a predefined duration:
+     - Current: 10 seconds of stability within limits.
+     - Temperature: 10 seconds of stability within limits.
+     - Voltage: 10 seconds (overvoltage) or 15 seconds (undervoltage) of stability within limits.
+   - The BMS shall provide continuous monitoring of current, temperature, and voltage to ensure safe and reliable operation.
+
+5. **Indicator Logic**:
+   - The BMS shall use LED indicators to signal fault conditions, with distinct LEDs for current, temperature, and voltage faults.
+   - LEDs shall remain ON during fault conditions and turn OFF when the system recovers.
+
+This document outlines the functional requirements derived from the flowcharts provided. It ensures that the BMS operates safely under varying conditions and provides fault feedback to users.
+

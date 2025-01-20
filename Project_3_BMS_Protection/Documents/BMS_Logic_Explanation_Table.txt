@@ -1,0 +1,21 @@
+
+Consolidated Explanation of BMS Logic
+
+| Parameter       | Condition                                    | Explanation                                                                 |
+|-----------------|---------------------------------------------|-----------------------------------------------------------------------------|
+| **Current**     | C > 3 (Charging Overcurrent)                | Protects battery from overcurrent during charging by disabling all FETs.   |
+|                 | C < -5 (Discharging Overcurrent)            | Prevents excessive discharge current by disabling all FETs.                |
+|                 | 0.5 < C ≤ 3 (Normal Charging)               | Allows safe charging within specified range.                               |
+|                 | -5 ≤ C ≤ -0.5 (Normal Discharging)          | Permits safe discharging within specified range.                           |
+|                 | -0.5 < C < 0.5 (Undercurrent)               | Indicates low load; no action needed; FETs remain active.                  |
+| **Temperature** | T > 40°C (Overtemperature)                  | Prevents overheating by disabling all FETs.                                |
+|                 | T < 15°C (Undertemperature)                 | Protects battery in cold conditions by disabling all FETs.                 |
+|                 | 20°C ≤ T ≤ 40°C (Normal)                    | Maintains normal operation within the safe temperature range.              |
+| **Voltage**     | V > 4.15 (Overvoltage during Charging)       | Avoids overcharging by disabling charge FETs.                              |
+|                 | V < 2.8 (Undervoltage during Discharging)   | Prevents deep discharge by disabling discharge FETs.                       |
+|                 | 3.0 ≤ V ≤ 4.15 (Normal Voltage)             | Ensures normal operation within the safe voltage range.                    |
+
+**Key Notes:**
+- FETs (Field Effect Transistors) are switches controlling charging and discharging.
+- Recovery logic ensures that conditions stabilize for a predefined time (e.g., 10 or 15 seconds) before re-enabling FETs.
+- LEDs are used to indicate fault conditions for user feedback.

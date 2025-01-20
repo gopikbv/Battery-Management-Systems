@@ -1,0 +1,36 @@
+
+Test Cases for BMS Logic Validation in Simulink
+
+Test Cases for BMS Logic Validation in Simulink
+
+| Test Case ID | Parameter   | Condition                     | Expected Action in Simulink                     | Expected Recovery Behavior      | LED Status             |
+|--------------|-------------|-------------------------------|------------------------------------------------|---------------------------------|-------------------------|
+| TC1          | Current     | C > 3 (Overcurrent Charging)  | Disable all FETs (M1 = M2 = M3 = 0)            | Enable FETs when C ≤ 3 for 10 sec   | ON during fault         |
+| TC2          | Current     | C < -5 (Overcurrent Discharging)| Disable all FETs (M1 = M2 = M3 = 0)            | Enable FETs when C ≥ -5 for 10 sec  | ON during fault         |
+| TC3          | Current     | 0.5 < C ≤ 3 (Normal Charging) | Enable all FETs (M1 = M2 = M3 = 1)             | Continuous monitoring               | OFF                    |
+| TC4          | Current     | -5 ≤ C ≤ -0.5 (Normal Discharging)| Enable all FETs (M1 = M2 = M3 = 1)             | Continuous monitoring               | OFF                    |
+| TC5          | Current     | -0.5 < C < 0.5 (Undercurrent) | Enable all FETs (M1 = M2 = M3 = 1)             | Continuous monitoring               | OFF                    |
+| TC6          | Temperature | T > 40°C (Overtemperature)    | Disable all FETs (M1 = M2 = M3 = 0)            | Enable FETs when T ≤ 35°C for 10 sec| ON during fault         |
+| TC7          | Temperature | T < 15°C (Undertemperature)   | Disable all FETs (M1 = M2 = M3 = 0)            | Enable FETs when T ≥ 20°C for 10 sec| ON during fault         |
+| TC8          | Temperature | 20°C ≤ T ≤ 40°C (Normal)      | Enable all FETs (M1 = M2 = M3 = 1)             | Continuous monitoring               | OFF                    |
+| TC9          | Voltage     | V > 4.15 (Overvoltage Charging)| Disable charge FETs (M1 = M2 = 0, M3 = 1)      | Enable FETs when V ≤ 4.0 for 10 sec | ON during fault         |
+| TC10         | Voltage     | V < 2.8 (Undervoltage Discharging)| Disable discharge FETs (M3 = 0, M1 = M2 = 1)   | Enable FETs when V ≥ 3.0 for 15 sec | ON during fault         |
+| TC11         | Voltage     | 3.0 ≤ V ≤ 4.15 (Normal Voltage)| Enable all FETs (M1 = M2 = M3 = 1)             | Continuous monitoring               | OFF                    |
+
+Steps to Test the Logic in Simulink
+
+1. Set Up Inputs:
+   - Provide current (C), temperature (T), and voltage (V) as inputs using constant blocks, signal builders, or MATLAB scripts.
+   - Ensure you include test signals that simulate boundary and fault conditions for each parameter.
+
+2. Monitor Outputs:
+   - Use display blocks, scopes, or logging to monitor the status of FETs (M1, M2, M3) and LED outputs.
+
+3. Validate Behavior:
+   - For each test case, compare Simulink outputs (FETs and LEDs) with the expected results outlined in the table.
+
+4. Recovery Testing:
+   - Introduce fault conditions, hold them for a specific duration, and then return to safe values to confirm proper recovery behavior (e.g., timing delays).
+
+5. Document Results:
+   - Log whether the Simulink model behaves as expected for each test case.
