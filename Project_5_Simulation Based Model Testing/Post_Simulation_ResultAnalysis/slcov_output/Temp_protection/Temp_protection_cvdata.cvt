@@ -1,0 +1,2000 @@
+CV_Database {
+  modelcov {
+    id			    1
+    name		    "Temp_protection@(R2024a)"
+    unmangledName	    "Temp_protection"
+    dbVersion		    "(R2024a)"
+    canHarnessMapBackToOwner 1
+    refModelcovIds	    [1]
+    topModelcovId	    [1]
+    rootTree		    [0 2 0 0]
+    blockTypes		    [5]
+  }
+  root {
+    id			    2
+    modelcov		    1
+    topSlsf		    6
+    firstTest		    3
+    treeNode		    [1 0 0 0]
+    checksum		    [3450305037 2611374354 1515748243 3237612881]
+    structuralChecksum	    [4210602431 3314859986 2352171732 2085700673]
+    metricChecksum	    [0 0 0 0 2335229234 1282244319 4189135629 1448042607 0 0 0 0]
+    dataSize		    [75 34 0 28 36 0 0]
+    runningTotal	    3
+  }
+  testdata {
+    id			    3
+    modelcov		    1
+    tag			    "Run 1"
+    uniqueId		    "72de5c91-1280-41e2-8f4c-37550a4af4e5"
+    linkNode		    [2 0 0]
+    type		    DLGENABLED_TST
+    settings		    [1 0 0 0 0 0 0]
+    modelVersion	    "1.2"
+    creator		    "gopin"
+    lastModifiedDate	    "Sun Feb 02 16:01:57 2025"
+    blockReductionStatus    "forcedOff"
+    defaultParameterBehavior "Tunable"
+    dbVersion		    "(R2024a)"
+    dbversionToRestore	    "(R2024a)"
+    conditionallyExecuteInputs 1
+    startTime		    739650.6686489352
+    stopTime		    739650.6686831366
+    simStopTime		    10
+    data {
+      decision		      "100 M75x1[11 0 5 0 2 0 5 0 1 0 49 1 0 1 0 1 0 1 0 1 0 0 1 1 0 1 0 49 0 0 0 0 0 0 0 2 0 1 0 2 0 "
+      "50 0 1 0 1 0 50 0 0 0 0 0 0 0 4 0 2 0 4 0 1 49 1 0 1 0 0 1 1 0 1 0 49 0]"
+    }
+    testobjectives	    [0 0 0 0 0 0 0 0 0 0 0 0 0 4]
+    mcdcMode		    1
+    mldref_enable	    "on"
+    covExternalEMLEnable    1
+    forceBlockReductionOff  1
+    covBoundaryRelTol	    0.01
+    covBoundaryAbsTol	    1e-05
+    covSFcnEnable	    1
+  }
+  metricdata {
+    id			    4
+    metricenumValue	    14
+    metricName		    "cvmetric_Structural_block"
+    size		    27
+    data {
+      rawdata		      "100 M27x1[5 0 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1 1 0 1 0 1]"
+    }
+  }
+  typename {
+    id			    5
+    type		    "RelationalOperator"
+  }
+  slsfobj {
+    id			    6
+    name		    "Temp_protection"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [0 7 0 0]
+    metricFlags		    24667
+    metrics		    [46 47 48 49 50 51 52]
+    cvChecksum {
+      u1		      3450305037
+      u2		      2611374354
+      u3		      1515748243
+      u4		      3237612881
+    }
+    cvStructuralChecksum    [4210602431 3314859986 2352171732 2085700673]
+    cvMetricChecksum	    [2335229234 1282244319 4189135629 1448042607 0 0 0 0]
+  }
+  slsfobj {
+    id			    7
+    name		    "Chart1"
+    origin		    SIMULINK_OBJ
+    isAtomicSubsytem	    1
+    modelcov		    1
+    treeNode		    [6 8 0 20]
+    metricFlags		    8283
+    metrics		    [53 54 55 56 57 58]
+    cvChecksum {
+      u1		      3953656435
+      u2		      19447986
+      u3		      3384876896
+      u4		      2766258587
+    }
+    cvStructuralChecksum    [260289374 2063879277 1148585576 857857288]
+    cvMetricChecksum	    [4011964337 280398914 2202547001 3026447336 0 0 0 0]
+  }
+  slsfobj {
+    id			    8
+    name		    " SFunction "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [7 0 0 9]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    9
+    name		    " Demux "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [7 0 8 10]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    10
+    name		    " Terminator "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [7 0 9 11]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    11
+    name		    "Chart1"
+    origPath		    "Temp_protection:2"
+    origin		    STATEFLOW_OBJ
+    refClass		    1
+    modelcov		    1
+    treeNode		    [7 12 10 0]
+    metricFlags		    8283
+    metrics		    [59 60 61 62 63 64]
+    cvChecksum {
+      u1		      1567039524
+      u2		      3443120553
+      u3		      4180673206
+      u4		      672922310
+    }
+    cvStructuralChecksum    [229823842 4103724221 80544494 82169168]
+    cvMetricChecksum	    [3563353042 3820992677 4198840436 3194474119 0 0 0 0]
+  }
+  slsfobj {
+    id			    12
+    name		    "Initial_Start"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [11 0 0 13]
+    code		    70
+    cvChecksum {
+      u1		      4191187947
+      u2		      3706318390
+      u3		      2803492673
+      u4		      2436426037
+    }
+    cvStructuralChecksum    [4191187947 3706318390 2803492673 2436426037]
+  }
+  slsfobj {
+    id			    13
+    name		    "OT_Cutoff"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [11 0 12 14]
+    code		    71
+    cvChecksum {
+      u1		      979087008
+      u2		      2438370384
+      u3		      4065305977
+      u4		      2556718986
+    }
+    cvStructuralChecksum    [979087008 2438370384 4065305977 2556718986]
+  }
+  slsfobj {
+    id			    14
+    name		    "UT_Cutoff"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [11 0 13 15]
+    code		    72
+    cvChecksum {
+      u1		      551917599
+      u2		      3514065047
+      u3		      3181077673
+      u4		      1452017091
+    }
+    cvStructuralChecksum    [551917599 3514065047 3181077673 1452017091]
+  }
+  slsfobj {
+    id			    15
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [11 0 14 16]
+    code		    73
+    cvChecksum {
+      u1		      555668416
+      u2		      1955580048
+      u3		      3865771421
+      u4		      2562474511
+    }
+    cvStructuralChecksum    [555668416 1955580048 3865771421 2562474511]
+  }
+  slsfobj {
+    id			    16
+    name		    "[T_Sense>40]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [11 0 15 17]
+    metricFlags		    8257
+    metrics		    [74 75 76]
+    code		    85
+    cvChecksum {
+      u1		      2735092474
+      u2		      3675268129
+      u3		      979812459
+      u4		      3231630705
+    }
+    cvStructuralChecksum    [2370893578 3171622242 631574714 1233795350]
+    cvMetricChecksum	    [604010385 949660272 4187036415 4284515486 0 0 0 0]
+  }
+  slsfobj {
+    id			    17
+    name		    "[T_Sense<15]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [11 0 16 18]
+    metricFlags		    8257
+    metrics		    [86 87 88]
+    code		    97
+    cvChecksum {
+      u1		      1135240594
+      u2		      811402972
+      u3		      2544835950
+      u4		      2599847667
+    }
+    cvStructuralChecksum    [2219170213 4197104196 2943535393 1598199187]
+    cvMetricChecksum	    [4142689922 4284896176 3219773161 1239066446 0 0 0 0]
+  }
+  slsfobj {
+    id			    18
+    name		    "[T_Sense>20 && after(10,sec)]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [11 0 17 19]
+    metricFlags		    8267
+    metrics		    [98 99 100 101 102]
+    code		    117
+    cvChecksum {
+      u1		      2762724942
+      u2		      3410269961
+      u3		      159462070
+      u4		      788741115
+    }
+    cvStructuralChecksum    [4278796674 169093108 3145351961 643971680]
+    cvMetricChecksum	    [2297707852 2411144347 2289250247 333597629 0 0 0 0]
+  }
+  slsfobj {
+    id			    19
+    name		    "[T_Sense<35 && after(10,sec)]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [11 0 18 0]
+    metricFlags		    8267
+    metrics		    [118 119 120 121 122]
+    code		    137
+    cvChecksum {
+      u1		      3421100256
+      u2		      160919693
+      u3		      4211667468
+      u4		      3274583897
+    }
+    cvStructuralChecksum    [2614063343 2422783359 1255393871 2763452012]
+    cvMetricChecksum	    [3467809176 192988789 2482355993 2997087488 0 0 0 0]
+  }
+  slsfobj {
+    id			    20
+    name		    "Over_Temperature_LED"
+    origin		    SIMULINK_OBJ
+    isAtomicSubsytem	    1
+    modelcov		    1
+    treeNode		    [6 21 7 30]
+    metricFlags		    8273
+    metrics		    [138 139 140 141]
+    cvChecksum {
+      u1		      1981375345
+      u2		      4217620086
+      u3		      3658858594
+      u4		      2430349304
+    }
+    cvStructuralChecksum    [1838166009 2740280524 1879577123 3565891580]
+    cvMetricChecksum	    [1857318222 3238499569 2762866463 2703257591 0 0 0 0]
+  }
+  slsfobj {
+    id			    21
+    name		    " SFunction "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [20 0 0 22]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    22
+    name		    " Demux "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [20 0 21 23]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    23
+    name		    " Terminator "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [20 0 22 24]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    24
+    name		    "Over_Temperature_LED"
+    origPath		    "Temp_protection:6"
+    origin		    STATEFLOW_OBJ
+    refClass		    1
+    modelcov		    1
+    treeNode		    [20 25 23 0]
+    metricFlags		    8273
+    metrics		    [142 143 144 145]
+    cvChecksum {
+      u1		      296424031
+      u2		      493886704
+      u3		      1136810496
+      u4		      2558998186
+    }
+    cvStructuralChecksum    [434119968 2887720914 2904140792 1743655278]
+    cvMetricChecksum	    [1803894752 3585201908 1772054744 4215596439 0 0 0 0]
+  }
+  slsfobj {
+    id			    25
+    name		    "LED_OFF"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [24 0 0 26]
+    code		    150
+    cvChecksum {
+      u1		      304142783
+      u2		      3335382474
+      u3		      3850603451
+      u4		      700694256
+    }
+    cvStructuralChecksum    [304142783 3335382474 3850603451 700694256]
+  }
+  slsfobj {
+    id			    26
+    name		    "LED_ON"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [24 0 25 27]
+    code		    151
+    cvChecksum {
+      u1		      3082980057
+      u2		      3552677777
+      u3		      1422214804
+      u4		      2576744418
+    }
+    cvStructuralChecksum    [3082980057 3552677777 1422214804 2576744418]
+  }
+  slsfobj {
+    id			    27
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [24 0 26 28]
+    code		    152
+    cvChecksum {
+      u1		      555668416
+      u2		      1955580048
+      u3		      3865771421
+      u4		      2562474511
+    }
+    cvStructuralChecksum    [555668416 1955580048 3865771421 2562474511]
+  }
+  slsfobj {
+    id			    28
+    name		    "[OT==1]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [24 0 27 29]
+    metricFlags		    8257
+    metrics		    [153 154 155]
+    code		    164
+    cvChecksum {
+      u1		      3594992476
+      u2		      286277906
+      u3		      2680011785
+      u4		      702054660
+    }
+    cvStructuralChecksum    [2682656380 3006270923 1882638432 373819368]
+    cvMetricChecksum	    [747212892 2843737335 1886344725 1199119552 0 0 0 0]
+  }
+  slsfobj {
+    id			    29
+    name		    "[OT==0]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [24 0 28 0]
+    metricFlags		    8257
+    metrics		    [165 166 167]
+    code		    176
+    cvChecksum {
+      u1		      3567890012
+      u2		      1738209423
+      u3		      3203125437
+      u4		      1286318623
+    }
+    cvStructuralChecksum    [4029540511 2131426005 2835440932 3630550299]
+    cvMetricChecksum	    [3987519851 2424091397 2334809078 361971664 0 0 0 0]
+  }
+  slsfobj {
+    id			    30
+    name		    "Under_Temperature_LED"
+    origin		    SIMULINK_OBJ
+    isAtomicSubsytem	    1
+    modelcov		    1
+    treeNode		    [6 31 20 40]
+    metricFlags		    8273
+    metrics		    [177 178 179 180]
+    cvChecksum {
+      u1		      2525901816
+      u2		      590052813
+      u3		      332916620
+      u4		      2842017270
+    }
+    cvStructuralChecksum    [1517502705 4103771623 3351582692 3839425875]
+    cvMetricChecksum	    [1628041313 623304551 3688914085 80376785 0 0 0 0]
+  }
+  slsfobj {
+    id			    31
+    name		    " SFunction "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [30 0 0 32]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    32
+    name		    " Demux "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [30 0 31 33]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    33
+    name		    " Terminator "
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [30 0 32 34]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    34
+    name		    "Under_Temperature_LED"
+    origPath		    "Temp_protection:8"
+    origin		    STATEFLOW_OBJ
+    refClass		    1
+    modelcov		    1
+    treeNode		    [30 35 33 0]
+    metricFlags		    8273
+    metrics		    [181 182 183 184]
+    cvChecksum {
+      u1		      2644833560
+      u2		      115048452
+      u3		      2142125706
+      u4		      1226433652
+    }
+    cvStructuralChecksum    [2216946875 607180864 2887520048 3433392257]
+    cvMetricChecksum	    [2396863302 551326782 132083474 324407739 0 0 0 0]
+  }
+  slsfobj {
+    id			    35
+    name		    "LED_OFF"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [34 0 0 36]
+    code		    189
+    cvChecksum {
+      u1		      304142783
+      u2		      3335382474
+      u3		      3850603451
+      u4		      700694256
+    }
+    cvStructuralChecksum    [304142783 3335382474 3850603451 700694256]
+  }
+  slsfobj {
+    id			    36
+    name		    "LED_ON"
+    origin		    STATEFLOW_OBJ
+    refClass		    4
+    modelcov		    1
+    treeNode		    [34 0 35 37]
+    code		    190
+    cvChecksum {
+      u1		      3082980057
+      u2		      3552677777
+      u3		      1422214804
+      u4		      2576744418
+    }
+    cvStructuralChecksum    [3082980057 3552677777 1422214804 2576744418]
+  }
+  slsfobj {
+    id			    37
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [34 0 36 38]
+    code		    191
+    cvChecksum {
+      u1		      555668416
+      u2		      1955580048
+      u3		      3865771421
+      u4		      2562474511
+    }
+    cvStructuralChecksum    [555668416 1955580048 3865771421 2562474511]
+  }
+  slsfobj {
+    id			    38
+    name		    "[UT==1]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [34 0 37 39]
+    metricFlags		    8257
+    metrics		    [192 193 194]
+    code		    203
+    cvChecksum {
+      u1		      3761784702
+      u2		      3323456877
+      u3		      204779538
+      u4		      3586573977
+    }
+    cvStructuralChecksum    [1818033690 968673445 4284261507 4086992981]
+    cvMetricChecksum	    [1418958325 3112527075 198430128 1829399778 0 0 0 0]
+  }
+  slsfobj {
+    id			    39
+    name		    "[UT==0]"
+    origin		    STATEFLOW_OBJ
+    refClass		    5
+    modelcov		    1
+    treeNode		    [34 0 38 0]
+    metricFlags		    8257
+    metrics		    [204 205 206]
+    code		    215
+    cvChecksum {
+      u1		      883994241
+      u2		      2027789993
+      u3		      1235366286
+      u4		      1234847416
+    }
+    cvStructuralChecksum    [1295021220 3437481995 1996171600 296532818]
+    cvMetricChecksum	    [1582144950 2395604250 2047470132 1731047243 0 0 0 0]
+  }
+  slsfobj {
+    id			    40
+    name		    "GreaterThan"
+    origin		    SIMULINK_OBJ
+    slBlckType		    5
+    modelcov		    1
+    treeNode		    [6 0 30 41]
+    metricFlags		    24594
+    metrics		    [216 217 218 219]
+    cvChecksum {
+      u1		      3715714486
+      u2		      1854038358
+      u3		      2934402918
+      u4		      1877050957
+    }
+    cvStructuralChecksum    [3115923882 3665789058 58906015 3584683972]
+    cvMetricChecksum	    [1553142706 2760174384 3558352611 991461576 0 0 0 0]
+  }
+  slsfobj {
+    id			    41
+    name		    "Less Than"
+    origin		    SIMULINK_OBJ
+    slBlckType		    5
+    modelcov		    1
+    treeNode		    [6 0 40 42]
+    metricFlags		    24594
+    metrics		    [228 229 230 231]
+    cvChecksum {
+      u1		      340425352
+      u2		      498676773
+      u3		      3351432268
+      u4		      1997991824
+    }
+    cvStructuralChecksum    [1577640679 2540797564 209575440 2349170448]
+    cvMetricChecksum	    [2067396234 2539153722 1623622787 1014888191 0 0 0 0]
+  }
+  slsfobj {
+    id			    42
+    name		    "Knob"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [6 0 41 43]
+    cvChecksum {
+      u1		      3439279571
+      u2		      2561743879
+      u3		      3663033115
+      u4		      195740233
+    }
+    cvStructuralChecksum    [3439279571 2561743879 3663033115 195740233]
+  }
+  slsfobj {
+    id			    43
+    name		    "Over Temp"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [6 0 42 44]
+    metricFlags		    16400
+    metrics		    [240 241]
+    cvChecksum {
+      u1		      263423107
+      u2		      1317515632
+      u3		      6495393
+      u4		      4214387966
+    }
+    cvStructuralChecksum    [263423107 1317515632 6495393 4214387966]
+  }
+  slsfobj {
+    id			    44
+    name		    "TempSense"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [6 0 43 45]
+    metricFlags		    16400
+    metrics		    [244 245]
+    cvChecksum {
+      u1		      263423107
+      u2		      1317515632
+      u3		      6495393
+      u4		      4214387966
+    }
+    cvStructuralChecksum    [263423107 1317515632 6495393 4214387966]
+  }
+  slsfobj {
+    id			    45
+    name		    "Under Temp"
+    origin		    SIMULINK_OBJ
+    modelcov		    1
+    treeNode		    [6 0 44 0]
+    metricFlags		    16400
+    metrics		    [248 249]
+    cvChecksum {
+      u1		      263423107
+      u2		      1317515632
+      u3		      6495393
+      u4		      4214387966
+    }
+    cvStructuralChecksum    [263423107 1317515632 6495393 4214387966]
+  }
+  metric {
+    id			    46
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 0]
+    dataCnt		    [23 0 -1 -1]
+    dataWidth		    76
+  }
+  metric {
+    id			    47
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 0]
+    dataCnt		    [12 0 -1 -1]
+    dataWidth		    35
+  }
+  metric {
+    id			    48
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 0]
+    dataCnt		    [4 0 -1 -1]
+    dataWidth		    29
+  }
+  metric {
+    id			    49
+  }
+  metric {
+    id			    50
+    dataCnt		    [18 1 0 0]
+  }
+  metric {
+    id			    51
+  }
+  metric {
+    id			    52
+    dataIdx		    [0 -1]
+    justifiedDataIdx	    [1 0]
+    dataCnt		    [5 0 -1 -1]
+    dataWidth		    28
+  }
+  metric {
+    id			    53
+    dataIdx		    [2 -1]
+    justifiedDataIdx	    [3 0]
+    dataCnt		    [11 0 -1 -1]
+    dataWidth		    34
+  }
+  metric {
+    id			    54
+    dataIdx		    [2 -1]
+    justifiedDataIdx	    [3 0]
+    dataCnt		    [8 0 -1 -1]
+    dataWidth		    21
+  }
+  metric {
+    id			    55
+    dataIdx		    [2 -1]
+    justifiedDataIdx	    [3 0]
+    dataCnt		    [4 0 -1 -1]
+    dataWidth		    27
+  }
+  sigranger {
+    id			    56
+    modelcov		    1
+    slsfobj		    7
+    cov			    [0 3 1 1 1 3 0 0 0]
+  }
+  metric {
+    id			    57
+    dataIdx		    [1 1]
+    dataCnt		    [9 1 0 0]
+  }
+  metric {
+    id			    58
+  }
+  metric {
+    id			    59
+    baseObjs		    [65]
+    dataIdx		    [6 4]
+    justifiedDataIdx	    [7 5]
+    dataCnt		    [11 3 -1 -1]
+    dataWidth		    32
+  }
+  metric {
+    id			    60
+    dataIdx		    [4 -1]
+    justifiedDataIdx	    [5 0]
+    dataCnt		    [8 0 -1 -1]
+    dataWidth		    19
+  }
+  metric {
+    id			    61
+    dataIdx		    [4 -1]
+    justifiedDataIdx	    [5 0]
+    dataCnt		    [4 0 -1 -1]
+    dataWidth		    25
+  }
+  sigranger {
+    id			    62
+    modelcov		    1
+    cov			    [6 4 1 1 1 1 4 0 0 0 0]
+  }
+  metric {
+    id			    63
+    dataCnt		    [8 2 0 0]
+  }
+  metric {
+    id			    64
+  }
+  decision {
+    id			    65
+    modelcov		    1
+    slsfobj		    11
+    descriptor		    66
+    outMsgs		    [67 68 69]
+    dc			    [3 0 8 0]
+  }
+  message {
+    id			    66
+    keyNum		    16
+    startChar		    -1
+  }
+  message {
+    id			    67
+    keyNum		    160
+    objParams		    [12]
+    startChar		    -1
+  }
+  message {
+    id			    68
+    keyNum		    160
+    objParams		    [13]
+    startChar		    -1
+  }
+  message {
+    id			    69
+    keyNum		    160
+    objParams		    [14]
+    startChar		    -1
+  }
+  codeblock {
+    id			    70
+    slsfobj		    12
+    code		    "Initial_Start\nen:\nM1=1;\nM2=1;\nM3=1;"
+  }
+  codeblock {
+    id			    71
+    slsfobj		    13
+    code		    "OT_Cutoff\nen:\nM1=0;\nM2=0;\nM3=0;"
+  }
+  codeblock {
+    id			    72
+    slsfobj		    14
+    code		    "UT_Cutoff\nen:\nM1=0;\nM2=0;\nM3=0;"
+  }
+  codeblock {
+    id			    73
+    slsfobj		    15
+  }
+  metric {
+    id			    74
+    baseObjs		    [77]
+    dataIdx		    [13 11]
+    justifiedDataIdx	    [14 12]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    75
+    dataCnt		    [1 1 0 0]
+  }
+  metric {
+    id			    76
+    baseObjs		    [81]
+  }
+  decision {
+    id			    77
+    modelcov		    1
+    slsfobj		    16
+    descriptor		    78
+    outMsgs		    [79 80]
+    dc			    [2 0 15 0]
+  }
+  message {
+    id			    78
+    keyNum		    164
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    79
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    80
+    keyNum		    158
+    startChar		    12
+  }
+  decision {
+    id			    81
+    modelcov		    1
+    slsfobj		    16
+    descriptor		    82
+    outMsgs		    [83 84]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    82
+    keyNum		    162
+    intParams		    [1 11]
+    txtParams		    "T_Sense - 40"
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    83
+    keyNum		    36
+    startChar		    -1
+  }
+  message {
+    id			    84
+    keyNum		    41
+    startChar		    -1
+  }
+  codeblock {
+    id			    85
+    slsfobj		    16
+    code		    "[T_Sense>40]"
+    totalNumOfObjs	    [1 0 0 0]
+  }
+  metric {
+    id			    86
+    baseObjs		    [89]
+    dataIdx		    [19 17]
+    justifiedDataIdx	    [20 18]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    87
+    dataCnt		    [1 1 0 0]
+  }
+  metric {
+    id			    88
+    baseObjs		    [93]
+  }
+  decision {
+    id			    89
+    modelcov		    1
+    slsfobj		    17
+    descriptor		    90
+    outMsgs		    [91 92]
+    dc			    [2 0 21 0]
+  }
+  message {
+    id			    90
+    keyNum		    164
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    91
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    92
+    keyNum		    158
+    startChar		    12
+  }
+  decision {
+    id			    93
+    modelcov		    1
+    slsfobj		    17
+    descriptor		    94
+    outMsgs		    [95 96]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    94
+    keyNum		    162
+    intParams		    [1 11]
+    txtParams		    "T_Sense - 15"
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    95
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    96
+    keyNum		    42
+    startChar		    -1
+  }
+  codeblock {
+    id			    97
+    slsfobj		    17
+    code		    "[T_Sense<15]"
+    totalNumOfObjs	    [1 0 0 0]
+  }
+  metric {
+    id			    98
+    baseObjs		    [103]
+    dataIdx		    [25 23]
+    justifiedDataIdx	    [26 24]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    99
+    baseObjs		    [107 108]
+    dataIdx		    [8 6]
+    justifiedDataIdx	    [9 7]
+    dataCnt		    [4 4 -1 -1]
+    dataWidth		    9
+  }
+  metric {
+    id			    100
+    baseObjs		    [111]
+    dataIdx		    [8 6]
+    justifiedDataIdx	    [9 7]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    12
+  }
+  metric {
+    id			    101
+    dataCnt		    [2 2 0 0]
+  }
+  metric {
+    id			    102
+    baseObjs		    [113]
+  }
+  decision {
+    id			    103
+    modelcov		    1
+    slsfobj		    18
+    descriptor		    104
+    outMsgs		    [105 106]
+    dc			    [2 0 27 0]
+  }
+  message {
+    id			    104
+    keyNum		    164
+    startChar		    1
+    length		    28
+  }
+  message {
+    id			    105
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    106
+    keyNum		    158
+    startChar		    29
+  }
+  condition {
+    id			    107
+    modelcov		    1
+    slsfobj		    18
+    key			    -1
+    descriptor		    109
+    coverage		    [11 10 0]
+  }
+  condition {
+    id			    108
+    modelcov		    1
+    slsfobj		    18
+    key			    -1
+    descriptor		    110
+    coverage		    [13 12 0]
+  }
+  message {
+    id			    109
+    keyNum		    164
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    110
+    keyNum		    164
+    startChar		    15
+    length		    14
+  }
+  mcdcentry {
+    id			    111
+    modelcov		    1
+    slsfobj		    18
+    key			    -1
+    numPredicates	    2
+    pathCount		    3
+    pathStorageCount	    1
+    mcdcMode		    MCDCMODE_MASKING
+    bst			    [0 1 -3]
+    expressionTree	    [3 -1 -1 0 3 -1 -1 1 3 2 2 -1]
+    descriptor		    112
+    conditions		    [107 108]
+    dataBaseIdx		    [10 12 14 16 9999 0]
+  }
+  message {
+    id			    112
+    keyNum		    164
+    startChar		    1
+    length		    28
+  }
+  decision {
+    id			    113
+    modelcov		    1
+    slsfobj		    18
+    descriptor		    114
+    outMsgs		    [115 116]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    114
+    keyNum		    162
+    intParams		    [1 11]
+    txtParams		    "T_Sense - 20"
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    115
+    keyNum		    36
+    startChar		    -1
+  }
+  message {
+    id			    116
+    keyNum		    41
+    startChar		    -1
+  }
+  codeblock {
+    id			    117
+    slsfobj		    18
+    code		    "[T_Sense>20 && after(10,sec)]"
+    totalNumOfObjs	    [1 2 1 0]
+  }
+  metric {
+    id			    118
+    baseObjs		    [123]
+    dataIdx		    [31 29]
+    justifiedDataIdx	    [32 30]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    119
+    baseObjs		    [127 128]
+    dataIdx		    [16 14]
+    justifiedDataIdx	    [17 15]
+    dataCnt		    [4 4 -1 -1]
+    dataWidth		    9
+  }
+  metric {
+    id			    120
+    baseObjs		    [131]
+    dataIdx		    [19 17]
+    justifiedDataIdx	    [20 18]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    12
+  }
+  metric {
+    id			    121
+    dataCnt		    [2 2 0 0]
+  }
+  metric {
+    id			    122
+    baseObjs		    [133]
+  }
+  decision {
+    id			    123
+    modelcov		    1
+    slsfobj		    19
+    descriptor		    124
+    outMsgs		    [125 126]
+    dc			    [2 0 33 0]
+  }
+  message {
+    id			    124
+    keyNum		    164
+    startChar		    1
+    length		    28
+  }
+  message {
+    id			    125
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    126
+    keyNum		    158
+    startChar		    29
+  }
+  condition {
+    id			    127
+    modelcov		    1
+    slsfobj		    19
+    key			    -1
+    descriptor		    129
+    coverage		    [19 18 0]
+  }
+  condition {
+    id			    128
+    modelcov		    1
+    slsfobj		    19
+    key			    -1
+    descriptor		    130
+    coverage		    [21 20 0]
+  }
+  message {
+    id			    129
+    keyNum		    164
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    130
+    keyNum		    164
+    startChar		    15
+    length		    14
+  }
+  mcdcentry {
+    id			    131
+    modelcov		    1
+    slsfobj		    19
+    key			    -1
+    numPredicates	    2
+    pathCount		    3
+    pathStorageCount	    1
+    mcdcMode		    MCDCMODE_MASKING
+    bst			    [0 1 -3]
+    expressionTree	    [3 -1 -1 0 3 -1 -1 1 3 2 2 -1]
+    descriptor		    132
+    conditions		    [127 128]
+    dataBaseIdx		    [21 23 25 27 9999 0]
+  }
+  message {
+    id			    132
+    keyNum		    164
+    startChar		    1
+    length		    28
+  }
+  decision {
+    id			    133
+    modelcov		    1
+    slsfobj		    19
+    descriptor		    134
+    outMsgs		    [135 136]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    134
+    keyNum		    162
+    intParams		    [1 11]
+    txtParams		    "T_Sense - 35"
+    startChar		    1
+    length		    11
+  }
+  message {
+    id			    135
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    136
+    keyNum		    42
+    startChar		    -1
+  }
+  codeblock {
+    id			    137
+    slsfobj		    19
+    code		    "[T_Sense<35 && after(10,sec)]"
+    totalNumOfObjs	    [1 2 1 0]
+  }
+  metric {
+    id			    138
+    dataIdx		    [35 -1]
+    justifiedDataIdx	    [36 0]
+    dataCnt		    [6 0 -1 -1]
+    dataWidth		    21
+  }
+  sigranger {
+    id			    139
+    modelcov		    1
+    slsfobj		    20
+    cov			    [14 1 1 1 0]
+  }
+  metric {
+    id			    140
+    dataIdx		    [1 1]
+    dataCnt		    [4 1 0 0]
+  }
+  metric {
+    id			    141
+  }
+  metric {
+    id			    142
+    baseObjs		    [146]
+    dataIdx		    [39 37]
+    justifiedDataIdx	    [40 38]
+    dataCnt		    [6 2 -1 -1]
+    dataWidth		    19
+  }
+  sigranger {
+    id			    143
+    modelcov		    1
+    cov			    [16 2 1 1 2 0 0]
+  }
+  metric {
+    id			    144
+    dataCnt		    [3 1 0 0]
+  }
+  metric {
+    id			    145
+  }
+  decision {
+    id			    146
+    modelcov		    1
+    slsfobj		    24
+    descriptor		    147
+    outMsgs		    [148 149]
+    dc			    [2 0 41 0]
+  }
+  message {
+    id			    147
+    keyNum		    16
+    startChar		    -1
+  }
+  message {
+    id			    148
+    keyNum		    160
+    objParams		    [25]
+    startChar		    -1
+  }
+  message {
+    id			    149
+    keyNum		    160
+    objParams		    [26]
+    startChar		    -1
+  }
+  codeblock {
+    id			    150
+    slsfobj		    25
+    code		    "LED_OFF\nen:\nLED=0;\ndu:\nLED=0;"
+  }
+  codeblock {
+    id			    151
+    slsfobj		    26
+    code		    "LED_ON\nen:\nLED=1;"
+  }
+  codeblock {
+    id			    152
+    slsfobj		    27
+  }
+  metric {
+    id			    153
+    baseObjs		    [156]
+    dataIdx		    [45 43]
+    justifiedDataIdx	    [46 44]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    154
+    dataCnt		    [1 1 0 0]
+  }
+  metric {
+    id			    155
+    baseObjs		    [160]
+  }
+  decision {
+    id			    156
+    modelcov		    1
+    slsfobj		    28
+    descriptor		    157
+    outMsgs		    [158 159]
+    dc			    [2 0 47 0]
+  }
+  message {
+    id			    157
+    keyNum		    164
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    158
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    159
+    keyNum		    158
+    startChar		    7
+  }
+  decision {
+    id			    160
+    modelcov		    1
+    slsfobj		    28
+    descriptor		    161
+    outMsgs		    [162 163]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    161
+    keyNum		    162
+    intParams		    [1 6]
+    txtParams		    "OT - 1"
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    162
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    163
+    keyNum		    41
+    startChar		    -1
+  }
+  codeblock {
+    id			    164
+    slsfobj		    28
+    code		    "[OT==1]"
+    totalNumOfObjs	    [1 0 0 0]
+  }
+  metric {
+    id			    165
+    baseObjs		    [168]
+    dataIdx		    [51 49]
+    justifiedDataIdx	    [52 50]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    166
+    dataCnt		    [1 1 0 0]
+  }
+  metric {
+    id			    167
+    baseObjs		    [172]
+  }
+  decision {
+    id			    168
+    modelcov		    1
+    slsfobj		    29
+    descriptor		    169
+    outMsgs		    [170 171]
+    dc			    [2 0 53 0]
+  }
+  message {
+    id			    169
+    keyNum		    164
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    170
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    171
+    keyNum		    158
+    startChar		    7
+  }
+  decision {
+    id			    172
+    modelcov		    1
+    slsfobj		    29
+    descriptor		    173
+    outMsgs		    [174 175]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    173
+    keyNum		    162
+    intParams		    [1 6]
+    txtParams		    "OT - 0"
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    174
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    175
+    keyNum		    41
+    startChar		    -1
+  }
+  codeblock {
+    id			    176
+    slsfobj		    29
+    code		    "[OT==0]"
+    totalNumOfObjs	    [1 0 0 0]
+  }
+  metric {
+    id			    177
+    dataIdx		    [55 -1]
+    justifiedDataIdx	    [56 0]
+    dataCnt		    [6 0 -1 -1]
+    dataWidth		    21
+  }
+  sigranger {
+    id			    178
+    modelcov		    1
+    slsfobj		    30
+    cov			    [20 1 1 1 0]
+  }
+  metric {
+    id			    179
+    dataIdx		    [1 1]
+    dataCnt		    [4 1 0 0]
+  }
+  metric {
+    id			    180
+  }
+  metric {
+    id			    181
+    baseObjs		    [185]
+    dataIdx		    [59 57]
+    justifiedDataIdx	    [60 58]
+    dataCnt		    [6 2 -1 -1]
+    dataWidth		    19
+  }
+  sigranger {
+    id			    182
+    modelcov		    1
+    cov			    [22 2 1 1 2 0 0]
+  }
+  metric {
+    id			    183
+    dataCnt		    [3 1 0 0]
+  }
+  metric {
+    id			    184
+  }
+  decision {
+    id			    185
+    modelcov		    1
+    slsfobj		    34
+    descriptor		    186
+    outMsgs		    [187 188]
+    dc			    [2 0 61 0]
+  }
+  message {
+    id			    186
+    keyNum		    16
+    startChar		    -1
+  }
+  message {
+    id			    187
+    keyNum		    160
+    objParams		    [35]
+    startChar		    -1
+  }
+  message {
+    id			    188
+    keyNum		    160
+    objParams		    [36]
+    startChar		    -1
+  }
+  codeblock {
+    id			    189
+    slsfobj		    35
+    code		    "LED_OFF\nen:\nLED=0;\ndu:\nLED=0;"
+  }
+  codeblock {
+    id			    190
+    slsfobj		    36
+    code		    "LED_ON\nen:\nLED=1;"
+  }
+  codeblock {
+    id			    191
+    slsfobj		    37
+  }
+  metric {
+    id			    192
+    baseObjs		    [195]
+    dataIdx		    [65 63]
+    justifiedDataIdx	    [66 64]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    193
+    dataCnt		    [1 1 0 0]
+  }
+  metric {
+    id			    194
+    baseObjs		    [199]
+  }
+  decision {
+    id			    195
+    modelcov		    1
+    slsfobj		    38
+    descriptor		    196
+    outMsgs		    [197 198]
+    dc			    [2 0 67 0]
+  }
+  message {
+    id			    196
+    keyNum		    164
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    197
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    198
+    keyNum		    158
+    startChar		    7
+  }
+  decision {
+    id			    199
+    modelcov		    1
+    slsfobj		    38
+    descriptor		    200
+    outMsgs		    [201 202]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    200
+    keyNum		    162
+    intParams		    [1 6]
+    txtParams		    "UT - 1"
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    201
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    202
+    keyNum		    41
+    startChar		    -1
+  }
+  codeblock {
+    id			    203
+    slsfobj		    38
+    code		    "[UT==1]"
+    totalNumOfObjs	    [1 0 0 0]
+  }
+  metric {
+    id			    204
+    baseObjs		    [207]
+    dataIdx		    [71 69]
+    justifiedDataIdx	    [72 70]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  metric {
+    id			    205
+    dataCnt		    [1 1 0 0]
+  }
+  metric {
+    id			    206
+    baseObjs		    [211]
+  }
+  decision {
+    id			    207
+    modelcov		    1
+    slsfobj		    39
+    descriptor		    208
+    outMsgs		    [209 210]
+    dc			    [2 0 73 0]
+  }
+  message {
+    id			    208
+    keyNum		    164
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    209
+    keyNum		    159
+    startChar		    -1
+  }
+  message {
+    id			    210
+    keyNum		    158
+    startChar		    7
+  }
+  decision {
+    id			    211
+    modelcov		    1
+    slsfobj		    39
+    descriptor		    212
+    outMsgs		    [213 214]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    212
+    keyNum		    162
+    intParams		    [1 6]
+    txtParams		    "UT - 0"
+    startChar		    1
+    length		    6
+  }
+  message {
+    id			    213
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    214
+    keyNum		    41
+    startChar		    -1
+  }
+  codeblock {
+    id			    215
+    slsfobj		    39
+    code		    "[UT==0]"
+    totalNumOfObjs	    [1 0 0 0]
+  }
+  metric {
+    id			    216
+    baseObjs		    [220]
+    dataIdx		    [24 22]
+    justifiedDataIdx	    [25 23]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  sigranger {
+    id			    217
+    modelcov		    1
+    slsfobj		    40
+    cov			    [26 1 1 1 0]
+  }
+  metric {
+    id			    218
+    baseObjs		    [222]
+  }
+  metric {
+    id			    219
+    baseObjs		    [226]
+    dataIdx		    [4 2]
+    justifiedDataIdx	    [5 3]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  condition {
+    id			    220
+    modelcov		    1
+    slsfobj		    40
+    key			    -1
+    descriptor		    221
+    coverage		    [27 26 0]
+  }
+  message {
+    id			    221
+    keyNum		    43
+    intParams		    [1]
+    txtParams		    ">"
+    startChar		    -1
+  }
+  decision {
+    id			    222
+    modelcov		    1
+    slsfobj		    40
+    relopChkExprIdx	    -1
+    descriptor		    223
+    outMsgs		    [224 225]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    223
+    keyNum		    43
+    intParams		    [1 1]
+    txtParams		    "-"
+    startChar		    -1
+  }
+  message {
+    id			    224
+    keyNum		    36
+    startChar		    -1
+  }
+  message {
+    id			    225
+    keyNum		    41
+    startChar		    -1
+  }
+  decision {
+    id			    226
+    modelcov		    1
+    slsfobj		    40
+    relopChkExprIdx	    -1
+    descriptor		    227
+    dc			    [1 0 6 0]
+  }
+  message {
+    id			    227
+    keyNum		    24
+    txtParams		    "executed"
+    startChar		    -1
+  }
+  metric {
+    id			    228
+    baseObjs		    [232]
+    dataIdx		    [30 28]
+    justifiedDataIdx	    [31 29]
+    dataCnt		    [2 2 -1 -1]
+    dataWidth		    7
+  }
+  sigranger {
+    id			    229
+    modelcov		    1
+    slsfobj		    41
+    cov			    [28 1 1 1 0]
+  }
+  metric {
+    id			    230
+    baseObjs		    [234]
+  }
+  metric {
+    id			    231
+    baseObjs		    [238]
+    dataIdx		    [9 7]
+    justifiedDataIdx	    [10 8]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  condition {
+    id			    232
+    modelcov		    1
+    slsfobj		    41
+    key			    -1
+    descriptor		    233
+    coverage		    [33 32 0]
+  }
+  message {
+    id			    233
+    keyNum		    43
+    intParams		    [1]
+    txtParams		    "<"
+    startChar		    -1
+  }
+  decision {
+    id			    234
+    modelcov		    1
+    slsfobj		    41
+    relopChkExprIdx	    -1
+    descriptor		    235
+    outMsgs		    [236 237]
+    dc			    [2 0 0 0]
+  }
+  message {
+    id			    235
+    keyNum		    43
+    intParams		    [1 1]
+    txtParams		    "-"
+    startChar		    -1
+  }
+  message {
+    id			    236
+    keyNum		    35
+    startChar		    -1
+  }
+  message {
+    id			    237
+    keyNum		    42
+    startChar		    -1
+  }
+  decision {
+    id			    238
+    modelcov		    1
+    slsfobj		    41
+    relopChkExprIdx	    -1
+    descriptor		    239
+    dc			    [1 0 11 0]
+  }
+  message {
+    id			    239
+    keyNum		    24
+    txtParams		    "executed"
+    startChar		    -1
+  }
+  sigranger {
+    id			    240
+    modelcov		    1
+    slsfobj		    43
+    cov			    [30 1 1 1 0]
+  }
+  metric {
+    id			    241
+    baseObjs		    [242]
+    dataIdx		    [14 12]
+    justifiedDataIdx	    [15 13]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  decision {
+    id			    242
+    modelcov		    1
+    slsfobj		    43
+    relopChkExprIdx	    -1
+    descriptor		    243
+    dc			    [1 0 16 0]
+  }
+  message {
+    id			    243
+    keyNum		    24
+    txtParams		    "executed"
+    startChar		    -1
+  }
+  sigranger {
+    id			    244
+    modelcov		    1
+    slsfobj		    44
+    cov			    [32 1 1 1 0]
+  }
+  metric {
+    id			    245
+    baseObjs		    [246]
+    dataIdx		    [19 17]
+    justifiedDataIdx	    [20 18]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  decision {
+    id			    246
+    modelcov		    1
+    slsfobj		    44
+    relopChkExprIdx	    -1
+    descriptor		    247
+    dc			    [1 0 21 0]
+  }
+  message {
+    id			    247
+    keyNum		    24
+    txtParams		    "executed"
+    startChar		    -1
+  }
+  sigranger {
+    id			    248
+    modelcov		    1
+    slsfobj		    45
+    cov			    [34 1 1 1 0]
+  }
+  metric {
+    id			    249
+    baseObjs		    [250]
+    dataIdx		    [24 22]
+    justifiedDataIdx	    [25 23]
+    dataCnt		    [1 1 -1 -1]
+    dataWidth		    6
+  }
+  decision {
+    id			    250
+    modelcov		    1
+    slsfobj		    45
+    relopChkExprIdx	    -1
+    descriptor		    251
+    dc			    [1 0 26 0]
+  }
+  message {
+    id			    251
+    keyNum		    24
+    txtParams		    "executed"
+    startChar		    -1
+  }
+}
