@@ -34,7 +34,7 @@ The project files are organized as follows:
 
 ## Repository Location
 Path:  
-`D:\Decibel_Lab_BMS_Course\Matlab_Git_Repo\Battery-Management-Systems\Project_5_Simulation Based Model Testing`
+`https://github.com/gopikbv/Battery-Management-Systems/tree/main/Project_5_Simulation%20Based%20Model%20Testing`
 
 ## Conclusion
 This project validates the **Temperature Protection Algorithm** to ensure it meets safety and functional requirements. The testing methodology provides a reliable framework for future enhancements and performance validation.
